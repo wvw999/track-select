@@ -1,28 +1,3 @@
-#ruby, #css, #sharp, #userData {
-  display: none;
-  width: 45%;
-  margin: auto;
-}
-
-#headerContainer {
-  text-align: center;
-  padding: 30px 20px;
-  font-family: 'Abril Fatface';
-}
-
-#headerContainer h1 {
-  font-size: 3em;
-}
-
-#cardFormat {
-  margin-bottom: 40px;
-  width: 75%;
-}
-
-#userData {
-  background-color: white;
-}
-
 button {
   text-align: center;
 }
@@ -36,6 +11,11 @@ h6 {
   padding: 5px;
 }
 
+label {
+  font-size: 18px;
+  padding: 1px;
+}
+
 .checkbox {
   text-indent: 2px;
 }
@@ -43,4 +23,29 @@ h6 {
 .privTitle {
   font-size: 12px;
   font-style: italic;
+}
+
+#cardFormat {
+  margin-bottom: 40px;
+  width: 75%;
+}
+
+#headerContainer {
+  text-align: center;
+  padding: 30px 20px;
+  font-family: 'Abril Fatface';
+}
+
+#headerContainer h1 {
+  font-size: 3em;
+}
+
+#ruby, #css, #sharp, #userData {
+  display: none;
+  width: 45%;
+  margin: auto;
+}
+
+#userData {
+  background-color: white;
 }
