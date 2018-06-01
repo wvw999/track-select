@@ -1,9 +1,21 @@
-button {
-  text-align: center;
-}
-
 body {
   font-family: 'Lato';
+}
+
+div.radio {
+  margin-left: 10px;
+}
+
+h3 {
+  margin-top: 3px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+h4 {
+  margin-left: 15px;
+  font-size: 17px;
+  font-style: italic;
 }
 
 h6 {
@@ -11,9 +23,20 @@ h6 {
   padding: 5px;
 }
 
-label {
-  font-size: 18px;
+input {
   padding: 1px;
+}
+
+label {
+  font-size: 16px;
+  padding: 1px;
+}
+
+.btn.btn-dark {
+  text-align: center;
+  padding: 5px;
+  margin-left: 30px;
+  margin-bottom: 20px;
 }
 
 .checkbox {

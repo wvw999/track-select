@@ -1,28 +1,4 @@
 $(document).ready(function() {
-  function checkForm() {
-    // here, "this" is an input element
-    var isValidForm = true;
-    $(this.form).find(':input[required]:visible').each(function() {
-      if (!this.value.trim()) {
-        isValidForm = false;
-      }
-    });
-    $(this.form).find('.monitored-btn').prop('disabled', !isValidForm);
-    return isValidForm;
-  }
-
-  $('.monitored-btn').closest('form')
-    // indirectly bind the handler to form
-    .submit(function() {
-      return checkForm.apply($(this).find(':input')[0]);
-    })
-    // look for input elements
-    .find(':input[required]:visible')
-    // bind the handler to input elements
-    .keyup(checkForm)
-    // immediately fire it to initialize buttons state
-    .keyup();
-
   $("#surveyForm").submit(function(event) {
     // back-end
     var nameInput = $("input#name").val();

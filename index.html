@@ -1,153 +1,152 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-    <script src="js/scripts.js"></script>
-    <title>Epicodus Survey</title>
-  </head>
-  <body>
-    <!-- header information -->
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+  <title>Epicodus Survey</title>
+</head>
+<body>
   <div class="container" id="headerContainer">
     <h1>Which Epicodus track is right for you?</h1>
   </div>
-    <!-- beginning of forms -->
+      <!-- beginning of forms -->
   <div class="container card" id="cardFormat">
     <form id="surveyForm">
-    <!-- user data section -->
-      <div class="form-row">
-        <div class="form-group col">
-          <label for="name">Name</label>
-          <input type="name" class="form-control" id="name" placeholder="Name" required>
-        </div>
+      <!-- user data section -->
+    <div class="row">
+      <div class="col">
+        <label for="name">Name</label>
+        <input type="name" class="form-control" id="name" placeholder="Name" required>
       </div>
-      <div class="form-group">
+    </div>
+      <div class="group">
         <label for="address">Address</label>
         <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
       </div>
-      <div class="form-group">
+      <div class="group">
         <label for="address2">Address 2</label>
         <input type="text" class="form-control" id="address2" placeholder="Apartment, studio, or floor" required>
       </div>
-      <div class="form-row">
-        <div class="form-group col-md-6">
-          <label for="city">City</label>
-          <input type="text" class="form-control" id="city" required>
-        </div>
-        <div class="form-group col-md-4">
-          <label for="state">State</label>
-          <select id="state" class="form-control">
-            <option selected>Choose...</option>
-            <option value="AL">Alabama</option>
-            <option value="AK">Alaska</option>
-            <option value="AZ">Arizona</option>
-            <option value="AR">Arkansas</option>
-            <option value="CA">California</option>
-            <option value="CO">Colorado</option>
-            <option value="CT">Connecticut</option>
-            <option value="DE">Delaware</option>
-            <option value="DC">District Of Columbia</option>
-            <option value="FL">Florida</option>
-            <option value="GA">Georgia</option>
-            <option value="HI">Hawaii</option>
-            <option value="ID">Idaho</option>
-            <option value="IL">Illinois</option>
-            <option value="IN">Indiana</option>
-            <option value="IA">Iowa</option>
-            <option value="KS">Kansas</option>
-            <option value="KY">Kentucky</option>
-            <option value="LA">Louisiana</option>
-            <option value="ME">Maine</option>
-            <option value="MD">Maryland</option>
-            <option value="MA">Massachusetts</option>
-            <option value="MI">Michigan</option>
-            <option value="MN">Minnesota</option>
-            <option value="MS">Mississippi</option>
-            <option value="MO">Missouri</option>
-            <option value="MT">Montana</option>
-            <option value="NE">Nebraska</option>
-            <option value="NV">Nevada</option>
-            <option value="NH">New Hampshire</option>
-            <option value="NJ">New Jersey</option>
-            <option value="NM">New Mexico</option>
-            <option value="NY">New York</option>
-            <option value="NC">North Carolina</option>
-            <option value="ND">North Dakota</option>
-            <option value="OH">Ohio</option>
-            <option value="OK">Oklahoma</option>
-            <option value="OR">Oregon</option>
-            <option value="PA">Pennsylvania</option>
-            <option value="RI">Rhode Island</option>
-            <option value="SC">South Carolina</option>
-            <option value="SD">South Dakota</option>
-            <option value="TN">Tennessee</option>
-            <option value="TX">Texas</option>
-            <option value="UT">Utah</option>
-            <option value="VT">Vermont</option>
-            <option value="VA">Virginia</option>
-            <option value="WA">Washington</option>
-            <option value="WV">West Virginia</option>
-            <option value="WI">Wisconsin</option>
-            <option value="WY">Wyoming</option>
-          </select>
-        </div>
-        <div class="form-group col-md-2">
-          <label for="zip">Zip</label>
-          <input type="text" class="form-control" id="zip" required>
-        </div>
+    <div class="row">
+      <div class="col-md-6">
+        <label for="city">City</label>
+        <input type="text" class="form-control" id="city" required>
       </div>
-    <!-- Survey question ssection -->
-        <h3>What do you like to do in your free time?</h3>
-        <div class="radio">
-          <label><input type="radio" name="q1" value="1"> Build Birdhouses</label>
-        </div>
-        <div class="radio">
-          <label><input type="radio" name="q1" value="2"> Bake Cakes</label>
-        </div>
-        <div class="radio">
-          <label><input type="radio" name="q1" value="3"> Throw the tennis ball for the dog</label>
-        </div>
-        <h3>Which of these statements do you most identify with?</h3>
-        <div class="radio">
-          <label><input type="radio" name="q2" value="1"> "I like to butter my toast."</label>
-        </div>
-        <div class="radio">
-          <label><input type="radio" name="q2" value="2"> "I like it when other people butter my toast."</label>
-        </div>
-        <div class="radio">
-          <label><input type="radio" name="q2" value="3"> "I like toast, and also butter, but prefer not to think about this subject."</label>
-        </div>
-        <h3>Which best completes this statement:</h3>
-        <h3>"I have a collection of..." ?</h3>
-        <div class="radio">
-          <label><input type="radio" name="q3" value="1"> Bottlecaps</label>
-        </div>
-        <div class="radio">
-          <label><input type="radio" name="q3" value="2"> Matchbooks</label>
-        </div>
-        <div class="radio">
-          <label><input type="radio" name="q3" value="3"> Those lone tennis shoes you see in the road when you are driving</label>
-        </div>
-        <h3>Which best completes this statement:</h3>
-        <h3>"I always wanted to grow up to be a..." ?</h3>
-        <div class="radio">
-          <label><input type="radio" name="q4" value="1"> Fireman</label>
-        </div>
-        <div class="radio">
-          <label><input type="radio" name="q4" value="2"> Potted Plant</label>
-        </div>
-        <div class="radio">
-          <label><input type="radio" name="q4" value="3">  Person with a collection of lone tennis shoes</label>
-        </div>
-          <button type="submit" id="submitBtn" class="btn btn-dark">Submit!</button>
+      <div class="ol-md-4">
+        <label for="state">State</label>
+        <select id="state" class="form-control">
+          <option selected>Choose...</option>
+          <option value="AL">Alabama</option>
+          <option value="AK">Alaska</option>
+          <option value="AZ">Arizona</option>
+          <option value="AR">Arkansas</option>
+          <option value="CA">California</option>
+          <option value="CO">Colorado</option>
+          <option value="CT">Connecticut</option>
+          <option value="DE">Delaware</option>
+          <option value="DC">District Of Columbia</option>
+          <option value="FL">Florida</option>
+          <option value="GA">Georgia</option>
+          <option value="HI">Hawaii</option>
+          <option value="ID">Idaho</option>
+          <option value="IL">Illinois</option>
+          <option value="IN">Indiana</option>
+          <option value="IA">Iowa</option>
+          <option value="KS">Kansas</option>
+          <option value="KY">Kentucky</option>
+          <option value="LA">Louisiana</option>
+          <option value="ME">Maine</option>
+          <option value="MD">Maryland</option>
+          <option value="MA">Massachusetts</option>
+          <option value="MI">Michigan</option>
+          <option value="MN">Minnesota</option>
+          <option value="MS">Mississippi</option>
+          <option value="MO">Missouri</option>
+          <option value="MT">Montana</option>
+          <option value="NE">Nebraska</option>
+          <option value="NV">Nevada</option>
+          <option value="NH">New Hampshire</option>
+          <option value="NJ">New Jersey</option>
+          <option value="NM">New Mexico</option>
+          <option value="NY">New York</option>
+          <option value="NC">North Carolina</option>
+          <option value="ND">North Dakota</option>
+          <option value="OH">Ohio</option>
+          <option value="OK">Oklahoma</option>
+          <option value="OR">Oregon</option>
+          <option value="PA">Pennsylvania</option>
+          <option value="RI">Rhode Island</option>
+          <option value="SC">South Carolina</option>
+          <option value="SD">South Dakota</option>
+          <option value="TN">Tennessee</option>
+          <option value="TX">Texas</option>
+          <option value="UT">Utah</option>
+          <option value="VT">Vermont</option>
+          <option value="VA">Virginia</option>
+          <option value="WA">Washington</option>
+          <option value="WV">West Virginia</option>
+          <option value="WI">Wisconsin</option>
+          <option value="WY">Wyoming</option>
+        </select>
       </div>
+      <div class="col-md-2">
+        <label for="zip">Zip</label>
+        <input type="text" class="form-control" id="zip" required>
+      </div>
+    </div><!-- div ending form row at bottom of form-fields section -->
+          <!-- Survey question section begins in open space at bottom of form card section-->
+    <h3>What do you like to do in your free time?</h3>
+    <div class="radio">
+      <label><input type="radio" name="q1" value="1"> Build Birdhouses</label>
+    </div>
+    <div class="radio">
+      <label><input type="radio" name="q1" value="2"> Bake Cakes</label>
+    </div>
+    <div class="radio">
+      <label><input type="radio" name="q1" value="3"> Throw the tennis ball for the dog</label>
+    </div>
+    <h3>Which of these statements do you most identify with?</h3>
+    <div class="radio">
+      <label><input type="radio" name="q2" value="1"> "I like to butter my toast."</label>
+    </div>
+    <div class="radio">
+      <label><input type="radio" name="q2" value="2"> "I like it when other people butter my toast."</label>
+    </div>
+    <div class="radio">
+      <label><input type="radio" name="q2" value="3"> "I like toast, and also butter, but prefer not to think about this subject."</label>
+    </div>
+    <h3>Which best completes this statement:</h3>
+    <h4>"I have a collection of..." ?</h4>
+    <div class="radio">
+      <label><input type="radio" name="q3" value="1"> Bottlecaps</label>
+    </div>
+    <div class="radio">
+      <label><input type="radio" name="q3" value="2"> Matchbooks</label>
+    </div>
+    <div class="radio">
+      <label><input type="radio" name="q3" value="3"> Those lone tennis shoes you see in the road when you are driving</label>
+    </div>
+    <h3>Which best completes this statement:</h3>
+    <h4>"I always wanted to grow up to be a..." ?</h4>
+    <div class="radio">
+      <label><input type="radio" name="q4" value="1"> Fireman</label>
+    </div>
+    <div class="radio">
+      <label><input type="radio" name="q4" value="2"> Potted Plant</label>
+    </div>
+    <div class="radio">
+      <label><input type="radio" name="q4" value="3"> Person with a collection of lone tennis shoes</label>
+    </div>
+    <button type="submit" id="submitBtn" class="btn btn-dark">Submit!</button>
     </form>
   </div>
-    <!-- beginning of results section -->
+    <!-- above div ends the entire top section container -->
+    <!-- beginning of results section it its own container -->
   <div class="container">
     <div class="card mb-3" id="ruby">
       <img class="card-img-top" src="img/ruby.gif" alt="Card image cap">
@@ -187,5 +186,5 @@
       </div>
     </div>
   </div>
-  </body>
+</body>
 </html>
