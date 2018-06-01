@@ -6,7 +6,7 @@
 
 ## Description
 
-_A web-based track-select page which shows you which class you should take you are after you take a short quiz_
+_A web-based track-select page which shows you which class you should take you are after you take a short quiz. Logic in branching includes 'if', 'else if', 'else', a nested 'if' chain, an 'if or' statement, and an 'if and' statement. Page effects include spans, fade transitions, hidden elements, form field and radio button validation (page cannot be submitted without required data)._
 
 ## Setup/Installation Requirements
 
@@ -15,7 +15,7 @@ _A web-based track-select page which shows you which class you should take you a
 * _hands_
 * _power outlet_
 * _[Link to Will's live site] (https://wvw999.github.io/track-select/)_
-* _[Link to Rita's live site] (https://ritabc.github.io/track-select/)_
+* _[Link to Will's repo] (https://github.com/wvw999/track-select)_
 
 _more instructions soon_
 
