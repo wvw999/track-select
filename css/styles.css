@@ -1,0 +1,32 @@
+#bird, #cookie, #grouch {
+  display: none;
+  width: 45%;
+  margin: auto;
+}
+
+#headerContainer h1 {
+  font-size: 3em;
+}
+
+#headerContainer {
+  text-align: center;
+  padding: 30px 20px;
+  font-family: 'Abril Fatface';
+}
+
+#cardFormat {
+  margin-bottom: 40px;
+  width: 75%;
+}
+
+button {
+  text-align: center;
+}
+
+body {
+  font-family: 'Lato';
+}
+
+.checkbox {
+  text-indent: 2px;
+}
