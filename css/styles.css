@@ -1,35 +1,27 @@
 body {
   font-family: 'Lato';
+  background-color: #ffffe6;
 }
 
 div.radio {
   margin-left: 10px;
 }
 
-h3 {
-  margin-top: 3px;
+label {
+  font-size: 16px;
+  font-family: arial;
+  margin: 5px;
+}
+
+span.quest {
   font-size: 18px;
   font-weight: bold;
 }
 
-h4 {
+span.quote {
   margin-left: 15px;
   font-size: 17px;
-  font-style: italic;
-}
-
-h6 {
-  font-size: 8px;
-  padding: 5px;
-}
-
-input {
-  padding: 1px;
-}
-
-label {
-  font-size: 16px;
-  padding: 1px;
+  font-family: arial;
 }
 
 .btn.btn-dark {
@@ -37,10 +29,16 @@ label {
   padding: 5px;
   margin-left: 30px;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .checkbox {
   text-indent: 2px;
+}
+
+.priv {
+  font-size: 8px;
+  padding: 2px;
 }
 
 .privTitle {
@@ -63,7 +61,7 @@ label {
   font-size: 3em;
 }
 
-#ruby, #css, #sharp, #userData {
+#ruby, #css, #sharp, #userData, #hidden {
   display: none;
   width: 45%;
   margin: auto;
