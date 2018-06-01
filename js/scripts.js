@@ -17,29 +17,31 @@ $(document).ready(function() {
     var q2i = parseInt($("input:radio[name=q2]:checked").val());
     var q3i = parseInt($("input:radio[name=q3]:checked").val());
     var q4i = parseInt($("input:radio[name=q4]:checked").val());
-    var q5i = parseInt($("input:radio[name=q4]:checked").val());
+    var q5i = parseInt($("input:radio[name=q5]:checked").val());
     var ans1 = q1i + q2i + q3i + q4i;
     // front-end
     if (q1i && q2i && q3i && q4i && q5i) {
-      if (q1i === 3 || q2i === 3 || q3i === 3 || q4i === 3 || q5i === 3) {
+      if (q1i === 3 && q2i === 3 && q3i === 3 && q4i === 3 && q5i === 3) {
         $("#ruby").hide();
         $("#css").hide();
         $("#sharp").delay(700).fadeIn(1000);
+        $("#hidden1").hide();
         $("#userData").delay(700).fadeIn(4000);
         $("#surveyForm").fadeOut(500);
         document.body.style.backgroundColor = "#b3f0ff";
-      } else if (q1i === 1 || q2i === 1 || q3i === 1 || q4i === 1 || q5i === 3) {
+      } else if (q1i === 1 && q2i === 1 && q3i === 1 && q4i === 1 && q5i === 3) {
         $("#ruby").hide();
         $("#css").hide();
         $("#sharp").hide();
-        $("#hidden").delay(700).fadeIn(1000);
+        $("#hidden1").delay(700).fadeIn(1000);
         $("#userData").delay(700).fadeIn(4000);
         $("#surveyForm").fadeOut(500);
         document.body.style.backgroundColor = "#e60000";
-      } else if (q1i === 2 && q2i === 2) {
+      } else if (q1i === 2 || q2i === 2) {
         $("#ruby").hide();
         $("#css").delay(700).fadeIn(1000);
         $("#sharp").hide();
+        $("#hidden1").hide();
         $("#userData").delay(700).fadeIn(4000);
         $("#surveyForm").fadeOut(500);
         document.body.style.backgroundColor = "#b3ffb3";
@@ -47,6 +49,7 @@ $(document).ready(function() {
         $("#ruby").hide();
         $("#css").delay(700).fadeIn(1000);
         $("#sharp").hide();
+        $("#hidden1").hide();
         $("#userData").delay(700).fadeIn(4000);
         $("#surveyForm").fadeOut(500);
         document.body.style.backgroundColor = "#b3ffb3";
@@ -54,6 +57,7 @@ $(document).ready(function() {
         $("#ruby").delay(700).fadeIn(1000);
         $("#css").hide();
         $("#sharp").hide();
+        $("#hidden1").hide();
         $("#userData").delay(700).fadeIn(4000);
         $("#surveyForm").fadeOut(500);
         document.body.style.backgroundColor = "#ffad99";
@@ -61,7 +65,7 @@ $(document).ready(function() {
         $("#ruby").hide();
         $("#css").hide();
         $("#sharp").hide();
-        $("#hidden").hide();
+        $("#hidden1").hide();
       }
     } else {
         alert("You must select an answer for each Survey question.")
