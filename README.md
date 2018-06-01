@@ -1,6 +1,6 @@
 # _track-select page_
 
-#### _Exercise for building a track-select using JavaScript, bootstrap, and JQuery, 5/31/2018_
+#### _Exercise for building a track-select using JavaScript, bootstrap, and JQuery, 6/1/2018_
 
 #### By _**William Swanson**_
 
