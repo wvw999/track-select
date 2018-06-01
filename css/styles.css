@@ -4,19 +4,23 @@
   margin: auto;
 }
 
-#headerContainer h1 {
-  font-size: 3em;
-}
-
 #headerContainer {
   text-align: center;
   padding: 30px 20px;
   font-family: 'Abril Fatface';
 }
 
+#headerContainer h1 {
+  font-size: 3em;
+}
+
 #cardFormat {
   margin-bottom: 40px;
   width: 75%;
+}
+
+#userData {
+  background-color: white;
 }
 
 button {
@@ -27,6 +31,15 @@ body {
   font-family: 'Lato';
 }
 
+h6 {
+  font-size: 8px;
+}
+
 .checkbox {
   text-indent: 2px;
+}
+
+.privTitle {
+  font-size: 12px;
+  font-style: italic;
 }
